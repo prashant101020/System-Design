@@ -1,3 +1,5 @@
+package CreationalDesignPattern;
+
 public class Factory {
     public static void main(String[] args){
     EmailNotificationCreator email= new EmailNotificationCreator();
@@ -14,13 +16,13 @@ interface Notification{
 
 class EmailNotification implements Notification{
    public void send(String message){
-        System.out.println("Sending Email Notification..."+message);
+        System.out.println("Sending Email CreationalDesignPattern.Notification..."+message);
     }
 }
 
 class SMSNotification implements Notification{
     public void send(String Message){
-        System.out.println("Sending SMS Notification..."+Message);
+        System.out.println("Sending SMS CreationalDesignPattern.Notification..."+Message);
     }
 }
 

@@ -1,3 +1,5 @@
+package CreationalDesignPattern;
+
 public class Singleton {
   public static void main(String[] args) {
 mySingleton1 obj11=mySingleton1.getInstance();
