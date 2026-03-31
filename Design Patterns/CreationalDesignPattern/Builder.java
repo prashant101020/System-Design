@@ -1,3 +1,5 @@
+package CreationalDesignPattern;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -28,7 +30,7 @@ class HttpRequest{
         this.timeout = builder.timeout;
     }
 public String toString(){
-        return  "HttpRequest{" +
+        return  "CreationalDesignPattern.HttpRequest{" +
                 "url='" + url + '\'' +
                 ", method='" + method + '\'' +
                 ", headers=" + Headers +

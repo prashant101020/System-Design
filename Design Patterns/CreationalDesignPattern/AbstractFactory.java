@@ -1,3 +1,4 @@
+package CreationalDesignPattern;
 
 public class AbstractFactory {
     public static void main(String args[]){
@@ -27,11 +28,11 @@ interface Checkbox{
 class windowsButton implements Button{
     @Override
     public void paint() {
-        System.out.print("Windows Button painting....");
+        System.out.print("Windows CreationalDesignPattern.Button painting....");
     }
     @Override
     public void onClick() {
-        System.out.print("Windows Button onClick....");
+        System.out.print("Windows CreationalDesignPattern.Button onClick....");
     }
 }
 
@@ -51,11 +52,11 @@ class WindowsCheckBox implements Checkbox{
 class macOsButton implements Button{
     @Override
     public void paint() {
-        System.out.print("Mac OS Button painting....");
+        System.out.print("Mac OS CreationalDesignPattern.Button painting....");
     }
     @Override
     public void onClick() {
-        System.out.print("Mac OS Button onClick....");
+        System.out.print("Mac OS CreationalDesignPattern.Button onClick....");
     }
 }
 
