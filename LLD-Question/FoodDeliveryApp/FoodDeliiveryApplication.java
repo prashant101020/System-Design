@@ -30,7 +30,7 @@ public class FoodDeliiveryApplication {
         restaurantService.addRestaurant(restaurant4);
         restaurantService.addRestaurant(restaurant5);
         restaurantService.listAll();
-        User prashant=new User(1,"Prashant", "Airoli", "845413");
+        User prashant=new Member(1,"Prashant", 1234, MemberStatus.ACTIVE);
         OrderService oRderService=new OrderService();
         List<Item> itemList=new ArrayList<>();
         itemList.add(item);
@@ -40,10 +40,10 @@ public class FoodDeliiveryApplication {
         String ss= """
                 order Status: %d 
                 """;
-        System.out.println("Order Status of Order"+order.orderId+" for "+order.user.userName+" is "+order.getOrderStatus());
+        System.out.println("Order Status of Order"+order.orderId+" for "+order.user.getUserName()+" is "+order.getOrderStatus());
 
         oRderService.updateOrderStatus(order, OrderStatus.DELIVERED);
-        System.out.println("Order Status of Order"+order.orderId+" for "+order.user.userName+" is "+order.getOrderStatus());
+        System.out.println("Order Status of Order"+order.orderId+" for "+order.user.getUserName()+" is "+order.getOrderStatus());
 
     }
 }
